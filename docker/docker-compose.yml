@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   postgres:
     image: postgres:16
@@ -37,4 +35,9 @@ services:
 
 volumes:
   postgres_data:
+    external: true
+    name: jobhelperai_postgres_data
+
   pgadmin_data:
+    external: true
+    name: jobhelperai_pgadmin_data
